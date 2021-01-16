@@ -180,12 +180,11 @@ body {
   border-radius: 4px;
 }
 
-.icon55 {
+.icon-astronaut {
   width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
-
   background-image: url(/svg/astronaut.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -348,6 +347,7 @@ body {
   fill: var(--icon);
   align-items: center;
   justify-content: center;
+  border-radius: 25px;
 }
 
 .icon-instagram {
@@ -362,6 +362,7 @@ body {
   fill: var(--icon);
   align-items: center;
   justify-content: center;
+  border-radius: 25px;
 }
 
 .icon-twitter {
@@ -376,6 +377,7 @@ body {
   fill: var(--icon);
   align-items: center;
   justify-content: center;
+  border-radius: 25px;
 }
 
 .icon-facebook {
@@ -390,6 +392,7 @@ body {
   fill: var(--icon);
   align-items: center;
   justify-content: center;
+  border-radius: 25px;
 }
 
 .icon-linkedin {
