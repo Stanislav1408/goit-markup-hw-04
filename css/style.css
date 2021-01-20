@@ -30,6 +30,7 @@ body {
 .header a:focus,
 .header a:active {
   color: var(--color-hover);
+  outline: none;
 }
 
 .header {
@@ -96,17 +97,31 @@ body {
 .mailto {
   list-style: none;
   color: var(--color);
+  fill: var(--color);
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.envelope {
+  margin-right: 10px;
+}
+
+.Vector {
+  margin-right: 10px;
 }
 
 .tel {
   list-style: none;
   color: var(--color);
+  fill: var(--color);
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .mailtel .mailto .tel {
@@ -129,25 +144,10 @@ body {
   padding-left: 50px;
 }
 
-.envelope:hover,
-.envelope:focus {
+.mailtel a:hover,
+.mailtel a:focus {
+  color: var(--color-hover);
   fill: var(--color-hover);
-}
-
-.icon-envelope {
-  margin-right: 10px;
-  fill: var(--color);
-}
-
-.Vector:hover,
-.Vector:focus {
-  fill: var(--color-hover);
-}
-
-.icon-Vector {
-  margin-left: 30px;
-  margin-right: 10px;
-  fill: var(--color);
 }
 
 .effect {
@@ -198,6 +198,7 @@ body {
   width: 200px;
   height: 50px;
   cursor: pointer;
+  outline: none;
 }
 .service {
   font-weight: bold;
@@ -225,6 +226,7 @@ body {
   width: 1170px;
   justify-content: space-between;
   padding: 0;
+  margin: 0;
 }
 
 .tasks-heading {
@@ -313,6 +315,7 @@ body {
   height: 44px;
   padding: 0;
   justify-content: space-between;
+  margin: 16px 0 0 0;
 }
 
 .networks a:hover,
@@ -320,6 +323,7 @@ body {
   fill: var(--text-text);
   background-color: var(--color-hover);
   border-radius: 25px;
+  outline: none;
 }
 
 .instagram {
@@ -450,6 +454,7 @@ body {
 .clients-company a:focus {
   fill: var(--color-hover);
   border: 1px solid var(--color-hover);
+  outline: none;
 }
 
 .icon-logo1 {
@@ -491,50 +496,19 @@ body {
   width: 1170px;
   margin: 0 auto;
   display: flex;
-}
-
-.footer-icon {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  justify-content: space-between;
-  margin: 0;
-}
-
-.footer-icon li {
-  margin-left: 10px;
-}
-
-.footer-icon li:first-child {
-  margin-left: 0;
-}
-
-.footer-icon a:hover,
-.footer-icon a:focus {
-  background-color: var(--color-hover);
-}
-
-.clients-footer {
-  margin: 0 0 0 90px;
-}
-
-.heading {
-  display: flex;
   align-items: baseline;
-  margin-bottom: 20px;
 }
 
 .social {
-  display: flex;
+  margin-left: 70px;
 }
 
-.heading h3 {
+.social h3 {
+  margin: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   color: #ffffff;
-  width: 206px;
-  margin: 0 0 0 156px;
 }
 
 .footer-instagram {
@@ -589,6 +563,7 @@ body {
   text-decoration: none;
   font-family: Raleway;
   display: block;
+  margin-bottom: 20px;
 }
 
 .mailtel-list {
@@ -618,7 +593,7 @@ body {
 .footer address {
   font-style: normal;
   font-size: 14px;
-  line-height: 1, 71;
+  line-height: 1.71;
   color: var(--text-text);
 }
 
@@ -626,6 +601,7 @@ body {
 .footer a:focus,
 .footer a:active {
   color: var(--color-hover);
+  outline: none;
 }
 
 .Studio {
@@ -692,13 +668,14 @@ body {
 }
 
 button:hover,
-button :focus,
-button :active {
+button:focus,
+button:active {
   background-color: var(--color-hover);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   color: var(--text-text);
+  outline: none;
 }
 
 .list-button {
@@ -811,9 +788,11 @@ button :active {
   margin-right: 30px;
 }
 
-.list-no-style-work a:hover {
+.list-no-style-work a:hover,
+.list-no-style-work a:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
 }
 
 .work a {
