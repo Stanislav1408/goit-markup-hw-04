@@ -30,7 +30,6 @@ body {
 .header a:focus,
 .header a:active {
   color: var(--color-hover);
-  outline: none;
 }
 
 .header {
@@ -107,8 +106,6 @@ body {
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
-  display: flex;
-  flex-direction: row-reverse;
 }
 
 .envelope {
@@ -119,6 +116,16 @@ body {
   margin-right: 10px;
 }
 
+.mailtel .mailto {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.mailtel .tel {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .tel {
   list-style: none;
   color: var(--color);
@@ -126,8 +133,6 @@ body {
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
-  display: flex;
-  flex-direction: row-reverse;
 }
 
 .mailtel .mailto .tel {
@@ -163,7 +168,7 @@ body {
   padding-bottom: 200px;
   padding-top: 200px;
   display: flex;
-  background-image: url(../img/img.png);
+  background-image: url(../img/Img.png);
 }
 
 .effect-container {
@@ -205,14 +210,12 @@ body {
   height: 50px;
   cursor: pointer;
   outline: none;
-}
-.service {
+  color: var(--text-text);
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  text-align: center;
   letter-spacing: 0.06em;
-  color: var(--text-text);
+  padding: 0;
 }
 
 .task {
@@ -297,6 +300,9 @@ body {
   width: 370px;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .label {
@@ -305,7 +311,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   color: #ffffff;
-  padding-top: 27px;
 }
 
 .team {
@@ -470,10 +475,15 @@ body {
   margin: 50px 0 0 0;
 }
 
-.logo {
-  display: flex;
+.clients-company li {
   width: 170px;
   height: 90px;
+}
+
+.logo {
+  display: flex;
+  width: 100%;
+  height: 100%;
   border: 1px solid var(--icon);
   border-radius: 4px;
   align-items: center;
@@ -523,9 +533,7 @@ body {
   padding: 60px 0;
 }
 
-.footer-container {
-  width: 1170px;
-  margin: 0 auto;
+.footer .container {
   display: flex;
   align-items: baseline;
 }
