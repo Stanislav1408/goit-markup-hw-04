@@ -17,6 +17,12 @@ body {
   --icon: #afb1b8;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .list-no-style {
   list-style: none;
   display: flex;
@@ -181,7 +187,9 @@ body {
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
-  padding: 25px 0 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -359,7 +367,6 @@ body {
   fill: var(--text-text);
   background-color: var(--color-hover);
   border-radius: 25px;
-  outline: none;
 }
 
 .instagram {
@@ -495,7 +502,6 @@ body {
 .clients-company a:focus {
   fill: var(--color-hover);
   border: 1px solid var(--color-hover);
-  outline: none;
 }
 
 .icon-logo1 {
@@ -640,7 +646,6 @@ body {
 .footer a:focus,
 .footer a:active {
   color: var(--color-hover);
-  outline: none;
 }
 
 .Studio {
@@ -714,7 +719,6 @@ button:active {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   color: var(--text-text);
-  outline: none;
 }
 
 .list-button {
@@ -831,7 +835,6 @@ button:active {
 .list-no-style-work a:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  outline: none;
 }
 
 .work a {
