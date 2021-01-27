@@ -78,23 +78,55 @@ img {
   font-family: Raleway;
   display: block;
   margin-right: 93px;
+  transition-duration: 250ms;
 }
 
 .studio {
+  position: relative;
   color: var(--color-hover);
   font-weight: 500;
   text-decoration: none;
 }
 
 .portfolio {
+  position: relative;
   color: var(--colot-text);
   font-weight: 500;
   text-decoration: none;
 }
 .contact {
+  position: relative;
   color: var(--colot-text);
   font-weight: 500;
   text-decoration: none;
+}
+
+.studio:hover .border,
+.studio:focus .border {
+  opacity: 1;
+}
+
+.portfolio:hover .border,
+.portfolio:focus .border {
+  opacity: 1;
+}
+
+.contact:hover .border,
+.contact:focus .border {
+  opacity: 1;
+}
+
+.border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  background-color: var(--color-hover);
+  opacity: 0;
+  transition-duration: 250ms;
 }
 
 .studio,
@@ -103,15 +135,23 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition-duration: 250ms;
 }
 
 .mailto {
+  position: relative;
   list-style: none;
   color: var(--color);
   fill: var(--color);
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition-duration: 250ms;
+}
+
+.mailto:hover .border,
+.mailto:focus .border {
+  opacity: 1;
 }
 
 .envelope {
@@ -133,12 +173,19 @@ img {
 }
 
 .tel {
+  position: relative;
   list-style: none;
   color: var(--color);
   fill: var(--color);
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition-duration: 250ms;
+}
+
+.tel:hover .border,
+.tel:focus .border {
+  opacity: 1;
 }
 
 .mailtel .mailto .tel {
@@ -174,7 +221,7 @@ img {
   padding-bottom: 200px;
   padding-top: 200px;
   display: flex;
-  background-image: url(../img/Img.png);
+  background-image: url(../img/img.png);
 }
 
 .effect-container {
@@ -187,9 +234,7 @@ img {
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 25px 0 0 100px;
   margin-bottom: 30px;
 }
 
@@ -224,6 +269,50 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
   padding: 0;
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: 1000ms;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.backdrop .modal {
+  width: 528px;
+  height: 581px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+}
+
+.modal-close-btn {
+  outline: none;
+  padding: 0;
+}
+
+.backdrop .modal .modal-close-btn {
+  background-color: transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
 }
 
 .task {
@@ -367,6 +456,7 @@ img {
   fill: var(--text-text);
   background-color: var(--color-hover);
   border-radius: 25px;
+  outline: none;
 }
 
 .instagram {
@@ -377,6 +467,7 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 25px;
+  transition-duration: 250ms;
 }
 
 .icon-instagram {
@@ -392,6 +483,7 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 25px;
+  transition-duration: 250ms;
 }
 
 .icon-twitter {
@@ -407,6 +499,7 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 25px;
+  transition-duration: 250ms;
 }
 
 .icon-facebook {
@@ -422,6 +515,7 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 25px;
+  transition-duration: 250ms;
 }
 
 .icon-linkedin {
@@ -496,12 +590,14 @@ img {
   align-items: center;
   justify-content: center;
   fill: var(--icon);
+  transition-duration: 250ms;
 }
 
 .clients-company a:hover,
 .clients-company a:focus {
   fill: var(--color-hover);
   border: 1px solid var(--color-hover);
+  outline: none;
 }
 
 .icon-logo1 {
@@ -565,6 +661,7 @@ img {
   justify-content: center;
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.1);
+  transition-duration: 250ms;
 }
 
 .footer-twitter {
@@ -576,6 +673,7 @@ img {
   justify-content: center;
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.1);
+  transition-duration: 250ms;
 }
 
 .footer-facebook {
@@ -587,6 +685,7 @@ img {
   justify-content: center;
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.1);
+  transition-duration: 250ms;
 }
 
 .footer-linkedin {
@@ -598,6 +697,7 @@ img {
   justify-content: center;
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.1);
+  transition-duration: 250ms;
 }
 
 .WebStudios {
@@ -627,12 +727,14 @@ img {
   color: var(--color);
   text-decoration: none;
   display: block;
+  transition-duration: 250ms;
 }
 
 .mailtel-b {
   color: var(--color);
   text-decoration: none;
   display: block;
+  transition-duration: 250ms;
 }
 
 .footer address {
@@ -646,6 +748,7 @@ img {
 .footer a:focus,
 .footer a:active {
   color: var(--color-hover);
+  outline: none;
 }
 
 .Studio {
@@ -662,6 +765,7 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition-duration: 250ms;
 }
 
 .list-no-style-nav- {
@@ -673,6 +777,7 @@ img {
 }
 
 .portfolioo {
+  position: relative;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -681,13 +786,24 @@ img {
   text-decoration: none;
 }
 
+.portfolioo:hover .border,
+.portfolioo:focus .border {
+  opacity: 1;
+}
+
 .studioo {
+  position: relative;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--colot-text);
   font-weight: 500;
   text-decoration: none;
+}
+
+.studioo:hover .border,
+.studioo:focus .border {
+  opacity: 1;
 }
 
 .portfolio-section {
@@ -711,14 +827,15 @@ img {
   padding: 0;
 }
 
-button:hover,
-button:focus,
-button:active {
+.list-no-style-button button:hover,
+.list-no-style-button button:focus,
+.list-no-style-button button:active {
   background-color: var(--color-hover);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   color: var(--text-text);
+  outline: none;
 }
 
 .list-button {
@@ -740,6 +857,7 @@ button:active {
   background-color: var(--background-team);
   border-radius: 4px;
   cursor: pointer;
+  transition-duration: 250ms;
 }
 
 .button-type-b {
@@ -757,6 +875,7 @@ button:active {
   background-color: var(--background-team);
   border-radius: 4px;
   cursor: pointer;
+  transition-duration: 250ms;
 }
 
 .button-type-c {
@@ -774,6 +893,7 @@ button:active {
   background-color: var(--background-team);
   border-radius: 4px;
   cursor: pointer;
+  transition-duration: 250ms;
 }
 
 .button-type-d {
@@ -791,6 +911,7 @@ button:active {
   background-color: var(--background-team);
   border-radius: 4px;
   cursor: pointer;
+  transition-duration: 250ms;
 }
 
 .button-type-e {
@@ -808,6 +929,7 @@ button:active {
   background-color: var(--background-team);
   border-radius: 4px;
   cursor: pointer;
+  transition-duration: 250ms;
 }
 
 .work {
@@ -835,11 +957,63 @@ button:active {
 .list-no-style-work a:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
+  transition: transform 250ms;
 }
 
 .work a {
   text-decoration: none;
 }
+
+.thumb-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.thumb-img:hover .work-img,
+.thumb-img:focus .work-img {
+  transform: translatey(0);
+}
+
+.work-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  transform: translatey(100%);
+  transition-duration: 250ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-img .thumb-work {
+  margin: 0;
+  width: 322px;
+  height: 168px;
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--text-text);
+}
+
+/*.thumb-img:hover::before {
+  opacity: 1;
+  transition: 250ms;
+}
+
+.thumb-img::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+}*/
 
 .work-img-container {
   padding: 20px 0 20px 24px;
