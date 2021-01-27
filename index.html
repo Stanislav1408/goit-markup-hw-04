@@ -23,30 +23,43 @@
             <nav class="list-nav">
                 <a href="index.html" class="WebStudio">Web<span class="Studio-">Studio</span></a>
                 <ul class="list-no-style-nav">
-                    <li class="item"><a href="" class="studio">Студия</a></li>
-                    <li class="item"><a href="portfolio.html" class="portfolio">Портфолио</a></li>
-                    <li class="item"><a href="" class="contact">Контакты</a></li>
+                    <li class="item">
+                        <a href="" class="studio">Студия
+                            <div class="border"></div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="portfolio.html" class="portfolio">Портфолио
+                            <div class="border"></div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="" class="contact">Контакты
+                            <div class="border"></div>
+                        </a>
+                    </li>
                 </ul>
             </nav>
-
-
-
+    
+    
+    
             <ul class="mailtel">
                 <li class="item">
                     <a href="mailto:info@devstudio.com" class="mailto">info@devstudio.com
-
+    
                         <svg width="16px" height="16px" class="envelope">
                             <use href="./sprite.svg#icon-envelope"></use>
                         </svg>
-
+                        <div class="border"></div>
                     </a>
                 </li>
-
+    
                 <li class="item">
                     <a href="tel:380961111111" class="tel">+38 096 111 11 11
                         <svg width="16" height="16" class="Vector">
                             <use href="./sprite.svg#icon-Vector"></use>
                         </svg>
+                        <div class="border"></div>
                     </a>
                 </li>
             </ul>
@@ -63,7 +76,7 @@
         <section class="effect">
             <div class="effect-container">
                 <h1 class="business">Эффективные решения <br> для вашего бизнеса</h1>
-                <button type="button" class="button">Заказать услугу</button>
+                <button type="button" class="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -71,7 +84,7 @@
         <section class="tasks">
             <h2 class="task">Задачи</h2>
             <div class="tasks-container">
-
+        
                 <ul class="list-no-style-tasks">
                     <li class="tasks-heading">
                         <div class="icon">
@@ -136,7 +149,8 @@
                     </li>
                     <li>
                         <div class="thumb">
-                            <img src="./img/img(2).jpg" alt="IT Картинкка" width="370" title="IT Картинкка">
+                            <img src="./img/img(2).jpg
+                              " alt="IT Картинкка" width="370" title="IT Картинкка">
                             <div class="thumb-label">
                                 <h3 class="label">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
                             </div>
@@ -369,7 +383,7 @@
                     <li><a href="tel:380961111111" class="mailtel-b">+38 096 111 11 11</a></li>
                 </ul>
             </div>
-
+    
             <div class="social">
                 <h3>ПРИСОЕДИНЯЙТЕСЬ</h3>
                 <ul class="networks">
@@ -404,10 +418,24 @@
                 </ul>
             </div>
         </div>
-
+    
     </footer>
 
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="15" cy="15" r="15" fill="#fff" />
+                    <circle cx="15" cy="15" r="14.5" stroke="#000" stroke-opacity=".1" />
+                    <path
+                        d="M21 10.108L19.892 9 15.5 13.392 11.108 9 10 10.108l4.392 4.392L10 18.892 11.108 20l4.392-4.392L19.892 20 21 18.892 16.608 14.5 21 10.108z"
+                        fill="#000" />
+                </svg>
+            </button>
+        </div>
+    </div>
 
+    <script src="/modal.js"></script>
 
 
 
