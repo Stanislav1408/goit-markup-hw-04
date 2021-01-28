@@ -228,11 +228,11 @@ img {
 
 .task {
   display: none;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.tasks-container {
-  width: 1170px;
-  margin: 0 auto;
+.tasks {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -269,9 +269,6 @@ img {
 }
 
 .img-list {
-  width: 1170px;
-  text-align: center;
-  margin: 0 auto;
   padding-bottom: 94px;
 }
 
@@ -325,11 +322,6 @@ img {
   background-color: var(--background-team);
   padding: 94px 0;
   text-align: center;
-}
-
-.container-team {
-  width: 1170px;
-  margin: 0px auto;
 }
 
 .list-no-style-team {
@@ -697,12 +689,6 @@ img {
 .works {
   display: none;
 }
-
-.portfolio-container {
-  width: 1170px;
-  margin: 0 auto;
-}
-
 .list-no-style-button {
   justify-content: center;
   margin: 0 0 50px 0;
@@ -813,7 +799,6 @@ button:active {
 .work {
   display: flex;
   flex-wrap: wrap;
-  /*justify-content: space-between;*/
   padding: 0px;
   margin: 0;
 }
