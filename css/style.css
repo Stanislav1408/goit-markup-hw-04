@@ -174,7 +174,16 @@ img {
   padding-bottom: 200px;
   padding-top: 200px;
   display: flex;
-  background-image: url(../img/Img.png);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/Img.png);
+  width: 1600px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
 }
 
 .effect-container {
@@ -299,8 +308,8 @@ img {
 
 .thumb-label {
   position: absolute;
-  top: 224px;
-  right: 0;
+  bottom: 0;
+  left: 0;
   margin: 0;
   width: 370px;
   height: 70px;
@@ -361,10 +370,15 @@ img {
   border-radius: 25px;
 }
 
-.instagram {
-  display: flex;
+.networks li {
   width: 44px;
   height: 44px;
+}
+
+.instagram {
+  display: flex;
+  width: 100%;
+  height: 100%;
   fill: var(--icon);
   align-items: center;
   justify-content: center;
@@ -378,8 +392,8 @@ img {
 
 .twitter {
   display: flex;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   fill: var(--icon);
   align-items: center;
   justify-content: center;
@@ -393,8 +407,8 @@ img {
 
 .facebook {
   display: flex;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   fill: var(--icon);
   align-items: center;
   justify-content: center;
@@ -408,8 +422,8 @@ img {
 
 .linkedin {
   display: flex;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   fill: var(--icon);
   align-items: center;
   justify-content: center;
@@ -451,6 +465,8 @@ img {
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
+  margin: 0 auto;
+  width: 1170px;
 }
 
 .clients h2 {
@@ -459,11 +475,6 @@ img {
   line-height: 1.16;
   text-align: center;
   margin: 0;
-}
-
-.company {
-  margin: 0 auto;
-  width: 1170px;
 }
 
 .clients-company {
