@@ -561,8 +561,8 @@ img {
 
 .footer-instagram {
   display: flex;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   fill: var(--text-text);
   align-items: center;
   justify-content: center;
@@ -572,8 +572,8 @@ img {
 
 .footer-twitter {
   display: flex;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   fill: var(--text-text);
   align-items: center;
   justify-content: center;
@@ -583,8 +583,8 @@ img {
 
 .footer-facebook {
   display: flex;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   fill: var(--text-text);
   align-items: center;
   justify-content: center;
@@ -594,8 +594,8 @@ img {
 
 .footer-linkedin {
   display: flex;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   fill: var(--text-text);
   align-items: center;
   justify-content: center;
